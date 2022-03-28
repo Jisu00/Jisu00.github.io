@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "알쏭달쏭 코딩 세상"
+title                    : "Jisu's Devlog"
 title_separator          : "-"
-subtitle                 : ": Today I Learned 💻"
+subtitle                 : "알쏭달쏭 코딩 세상 💻"
 name                     : "Jisu Kim"
-description              : "An amazing website."
+description              : "알쏭달쏭 코딩 세상 💻"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,16 +104,16 @@ analytics:
 author:
   name             : "김지수"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**프론트엔드** 개발자"
+  bio              : "Front-end Developer"
   location         : "Seoul, South Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "jisudev00@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://Jisu00.github.io"
+      # url: "https://Jisu00.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
