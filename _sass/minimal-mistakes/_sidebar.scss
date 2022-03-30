@@ -170,7 +170,7 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: $type-size-6!important;
+    font-size: 0.95rem!important;
   }
 }
 
@@ -185,7 +185,6 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 0.85rem;
   }
 }
 
@@ -194,7 +193,7 @@
   display: table-cell;
   vertical-align: middle;
   font-family: $sans-serif;
-  z-index: 20;
+  z-index: 25;
   cursor: pointer;
 
   li:last-child {
@@ -267,7 +266,6 @@
     border: 0;
     background: transparent;
     box-shadow: none;
-    font-size: 0.8rem;
   }
 
   &:before {

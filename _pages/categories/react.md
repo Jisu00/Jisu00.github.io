@@ -7,7 +7,7 @@ sidebar:
   nav: "sidebar"
 ---
 
-<h2> - {{ site.categories.React | size }} 개의 포스트 </h2>
+<h2> {{ site.categories.React | size }} 개의 포스트 </h2>
 -----
 {% assign posts = site.categories.React %}
 
