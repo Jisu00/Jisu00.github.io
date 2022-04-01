@@ -49,6 +49,57 @@
 /*
      Post pagination navigation links
      ========================================================================== */
+.pagination_prev_next {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  /* next/previous buttons */
+  &--pager {
+    margin-top: 0em;
+    padding-top: 0em;
+    display: block;
+    padding: 1em;
+    width: 49%;
+    font-family: $sans-serif;
+    font-size: $type-size-5;
+    font-weight: bold;
+    text-decoration: none;
+    color: $muted-text-color;
+    background: #eff4fa;
+    border-radius: $border-radius;
+
+    &:hover {
+      color: $muted-text-color!important;
+      opacity: 0.8;
+    }
+
+    .prev_next {
+      color: #53555a;
+      font-size: 0.8rem;
+    }
+    
+    .prev_btn {
+      text-align: left!important;
+    }
+
+    .left_arrow {
+      float: left;    
+      color: #4f5a74;  
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+
+    .right_arrow {
+      float: right;
+      color: #4f5a74;
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+  }
+}
 
 .pagination {
   @include clearfix();
@@ -118,7 +169,7 @@
   }
 
   /* next/previous buttons */
-  &--pager {
+  /*&--pager {
     display: block;
     padding: 1em 2em;
     float: left;
@@ -152,7 +203,7 @@
       pointer-events: none;
       cursor: not-allowed;
     }
-  }
+  }*/
 }
 
 .page__content + .pagination,

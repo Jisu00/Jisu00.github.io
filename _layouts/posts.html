@@ -2,17 +2,6 @@
 layout: archive
 ---
 
-<header class="post-header">
-  <p style="font-size:0.8rem; color: #898ca3;" class="post-meta">Updated: {{ page.date | date: "%b %-d, %Y" }}
-    {% if page.tags %}
-    {% for tag in page.tags %}
-    <a class="label"><b>#{{ tag }}</b></a> &nbsp;
-    {% endfor %}
-    {% endif %}
- </p>
- <hr/>
-</header>
-
 {{ content }}
 
 <ul class="taxonomy__index">
