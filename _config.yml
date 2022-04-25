@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "💻 Jisu's Devlog"
+title                    : "Jisu's Devlog"
 title_separator          : "-"
-subtitle                 : ""
+subtitle                 : ": Today I Learned 💻"
 name                     : "Jisu Kim"
 description              : ""
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
