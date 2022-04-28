@@ -22,7 +22,7 @@
   <nav class="pagination_prev_next">
     {% if prev_post %}
       <a href="{{ prev_post.url }}" class="pagination_prev_next--pager prev_btn">
-        <div class="left_arrow">&lt;</div>
+        <div class="left_arrow" style="height: 100%; display: flex; align-items: center;">&lt;</div>
         <span class="prev_next">이전 글<br/></span>
         {{ prev_post.title }}
       </a>
@@ -31,9 +31,10 @@
     {% endif %}
     {% if next_post %}
       <a href="{{ next_post.url }}" class="pagination_prev_next--pager next_btn" style="text-align: right">
-        <div class="right_arrow">&gt;</div>
-        <span class="prev_next">다음 글<br/></span>
-        {{ next_post.title }}
+        <div class="right_arrow" style="height: 100%; display: flex; align-items: center;">&gt;</div>
+          <span class="prev_next">다음 글<br/></span>
+          {{ next_post.title }}
+        </div>
       </a>
     {% else %}
       <a href="#" class="pagination_prev_next--pager disabled" style="opacity: 0">가장 최근 글입니다</a>
