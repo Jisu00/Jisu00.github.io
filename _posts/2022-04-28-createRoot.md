@@ -1,5 +1,5 @@
 ---
-title: React) React v18 - ReactDOM.render에서 createRoot로
+title: React) React v18 - createRoot
 categories:
   - React
 date: 2022-04-28
