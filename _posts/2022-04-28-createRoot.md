@@ -1,11 +1,13 @@
 ---
-title: React) React v18 - createRoot
+title: "[React] React v18 - createRoot"
 categories:
   - React
 date: 2022-04-28
 last_modified_at: 2022-04-28
 author_profile: true
 ---
+
+### createRoot?
 
 평소처럼 React 프로젝트를 clone을 하고 실행하는데 아래와 같은 에러가 출력됐다.
 
