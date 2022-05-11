@@ -8,6 +8,13 @@
       <span class="nav__sub-title first">Front-end</span>
       <ul>
         {% for category in site.categories %}
+          {% if category[0] == "html_css" %}
+            <li><a href="/categories/html_css" class="">HTML/CSS ({{category[1].size}})</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <ul>
+        {% for category in site.categories %}
           {% if category[0] == "JavaScript" %}
             <li><a href="/categories/javascript" class="">JavaScript ({{category[1].size}})</a></li>
           {% endif %}
