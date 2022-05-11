@@ -7,9 +7,9 @@ sidebar:
   nav: "sidebar"
 ---
 
-<h2> {{ site.categories.html_css | size }} 개의 포스트 </h2>
+<h2> {{ site.categories["HTML/CSS"] | size }} 개의 포스트 </h2>
 -----
-{% assign posts = site.categories.html_css %}
+{% assign posts = site.categories["HTML/CSS"] %}
 
 
 {% for post in posts %}
