@@ -8,8 +8,8 @@
       <span class="nav__sub-title first">Web</span>
       <ul>
         {% for category in site.categories %}
-          {% if category[0] == "HTML&CSS" %}
-            <li><a href="/categories/html_css" class="">HTML&CSS ({{category[1].size}})</a></li>
+          {% if category[0] == "HTML & CSS" %}
+            <li><a href="/categories/html_css" class="">HTML & CSS ({{category[1].size}})</a></li>
           {% endif %}
         {% endfor %}
       </ul>
@@ -24,6 +24,13 @@
         {% for category in site.categories %}
           {% if category[0] == "React" %}
             <li><a href="/categories/react" class="">React ({{category[1].size}})</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <ul>
+        {% for category in site.categories %}
+          {% if category[0] == "Node.js + Express" %}
+            <li><a href="/categories/nodejs_express" class="">Node.js + Express ({{category[1].size}})</a></li>
           {% endif %}
         {% endfor %}
       </ul>
