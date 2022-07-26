@@ -80,6 +80,13 @@
       color: #53555a;
       font-size: 0.8rem;
     }
+
+    .title {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; 
+    }
     
     .prev_btn {
       text-align: left!important;

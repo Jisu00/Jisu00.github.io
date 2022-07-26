@@ -24,7 +24,7 @@
       <a href="{{ prev_post.url }}" class="pagination_prev_next--pager prev_btn">
         <div class="left_arrow" style="height: 100%; display: flex; align-items: center;">&lt;</div>
         <span class="prev_next">이전 글<br/></span>
-        {{ prev_post.title }}
+        <div class="title">{{ prev_post.title }}</div>
       </a>
     {% else %}
       <a href="#" class="pagination_prev_next--pager disabled" style="visibility: hidden;">첫 번째 글입니다</a>
@@ -33,7 +33,7 @@
       <a href="{{ next_post.url }}" class="pagination_prev_next--pager next_btn" style="text-align: right">
         <div class="right_arrow" style="height: 100%; display: flex; align-items: center;">&gt;</div>
         <span class="prev_next">다음 글<br/></span>
-        {{ next_post.title }}
+        <div class="title">{{ next_post.title }}</div>
       </a>
     {% else %}
       <a href="#" class="pagination_prev_next--pager disabled" style="visibility: hidden">가장 최근 글입니다</a>
