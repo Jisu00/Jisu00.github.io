@@ -1,13 +1,14 @@
 ---
-title: "[JS] Webpack) 1: Webpack이란?"
+title: "[JS] Webpack) 1-1: Webpack이란?"
 categories:
   - JavaScript
 date: 2022-07-26
-last_modified_at: 2022-07-26
+last_modified_at: 2022-07-27
 author_profile: true
 ---
 
 ### 하나의 js 파일로 묶어주는 도구, Webpack
+
 <br/>
 
 ![webpack](https://user-images.githubusercontent.com/62230430/180939282-5fbb0799-959a-4e9f-8477-6baf53d5357b.png)
@@ -16,7 +17,7 @@ author_profile: true
 
 ### 왜 Webpack을 사용해야 할까?
 
-요즘 대부분의 어플리케이션은 React, Vue 혹은 다른 라이브러리들에 의해 만들어진다. 이러한 라이브러리들은 CLI 도구를 제공하는데, 대부분의 환경 설정을 추상화하고 기본 값을 제공한다. 
+요즘 대부분의 어플리케이션은 React, Vue 혹은 다른 라이브러리들에 의해 만들어진다. 이러한 라이브러리들은 CLI 도구를 제공하는데, 대부분의 환경 설정을 추상화하고 기본 값을 제공한다. 이러한 기본 기능들의 유익함에 대해 이해하려면 기본 값을 조정해볼 필요가 있다.
 
 ### 장점
 
