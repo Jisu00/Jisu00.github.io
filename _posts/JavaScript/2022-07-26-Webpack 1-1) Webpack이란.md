@@ -25,8 +25,20 @@ author_profile: true
 2. 서로 다른 패키지들이 같은 이름의 전역 변수를 사용할 때 오작동하는 것을 극복
 3. Webpack의 다양한 플러그인을 이용하여 웹 개발시 필요한 다양한 작업 자동화 가능
 
+### 속성
+
+- **Mode** : 모드에 따라 번들링 최적화 진행 (development & production)
+- **Entry** : 웹팩에서 웹 자원을 변환하는 데 필요한 진입점 / JS 파일 경로 / 번들링 시작점
+- **Output** : 결과물의 파일 경로
+- **Module** : 웹팩에서 사용하는 모듈에 대한 설정 / rules를 통해 웹팩 로더 설정
+- **Loader** : 웹팩이 다양한 파일 확장자를 다룰 수 있도록 도와주는 서드파티 확장 프로그램들. JS가 아닌 파일들을 모듈로 변경
+- **Plugins** : 웹팩의 동작 방식을 바꿔주는 서드파티 확장 프로그램들
+- **Target** : 웹팩에서 번들링 결과를 어떤 목표로 하는지 설정 (es5, es2020 등)
+- **DevTool** : 소스맵 생성 관련 설정(source-map, inline-source-map 등)
+
 
 ### Reference
 
 - [Opentutorials - Webpack](https://opentutorials.org/module/4566)
 - [Webpack을 쓰는 이유](https://ingg.dev/webpack/) 
+- [번역) 10분 만에 웹팩 배우기](https://serzhul.io/JavaScript/learn-webpack-in-under-10minutes/)
