@@ -2,6 +2,10 @@
 title: "[JS] Webpack) 1-2: Babel이란?"
 categories:
   - JavaScript
+tags:
+  - Web
+  - JavaScript
+  - Babel
 date: 2022-07-27
 last_modified_at: 2022-07-27
 author_profile: true
@@ -22,7 +26,9 @@ author_profile: true
 
 모든 브라우저에서 새로운 ESNext(ES6+) 문법을 사용할 수 없다 (크로스 브라우징). 따라서 Babel과 같은 트랜스파일러를 통해 **구형 브라우저에서도 동작할 수 있는 ES5 이하의 코드로 변환** 시켜주는 것이 필수적이다.
 
+<br/>
+<br/>
 
-### Reference
+#### Reference
 
 - [Transpile, 트랜스파일링(Transpiling)](https://velog.io/@dahye-program/Transpile-Transpile-%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8C%8C%EC%9D%BC%EB%A7%81Transpiling)

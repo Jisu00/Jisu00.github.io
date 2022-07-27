@@ -2,6 +2,10 @@
 title: "[React] forwardRef"
 categories:
   - React
+tags:
+  - Web
+  - React
+  - DOM
 date: 2022-05-24
 last_modified_at: 2022-05-24
 author_profile: true

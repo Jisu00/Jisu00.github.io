@@ -2,6 +2,10 @@
 title: "[JS] Webpack) 1-1: Webpack이란?"
 categories:
   - JavaScript
+tags:
+  - Web
+  - JavaScript
+  - Webpack
 date: 2022-07-26
 last_modified_at: 2022-07-27
 author_profile: true
@@ -37,7 +41,10 @@ author_profile: true
 - **DevTool** : 소스맵 생성 관련 설정(source-map, inline-source-map 등)
 
 
-### Reference
+<br/>
+<br/>
+
+#### Reference
 
 - [Opentutorials - Webpack](https://opentutorials.org/module/4566)
 - [Webpack을 쓰는 이유](https://ingg.dev/webpack/) 
