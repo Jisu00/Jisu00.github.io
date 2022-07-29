@@ -87,15 +87,15 @@ $ npm i -D @babel/preset-env
 $ npm i -D @babel/preset-react
 $ npm i -D babel-loader
 ```
-- @babel/core : Babel의 기본적 구성 포함
-- @babel/preset-env : 자신의 브라우저에서 사용되는 최신 문법을 ES5로 변경
-- @babel/preset-react : jsx 지원
-- babel-loader : Babel과 Webpack 연결
+- **@babel/core** : Babel의 기본적 구성 포함
+- **@babel/preset-env** : 자신의 브라우저에서 사용되는 최신 문법을 ES5로 변경
+- **@babel/preset-react** : jsx 지원
+- **babel-loader** : Babel과 Webpack 연결
 
 
 ### Babel 연결
 
-- package.json
+- webpack.config.js
 
 ```js
 const path = require('path');
@@ -124,3 +124,56 @@ module.exports = {
   }
 }
 ```
+
+- **presets** : plugin들의 모음
+
+### @babel/preset-env의 설정
+
+preset-env에 설정을 적용하고 싶다면 `['@babel/preset-env', { ... }]`의 객체 안에서 가능하다.
+
+- webpack.config.js
+
+```js
+const path = require('path');
+const webpack = require('webpack');
+
+module.exports = {
+  name: '서비스 이름',
+  mode: 'development',
+  devtool: 'eval',
+    resolve: {
+    extensions: ['.js', '.jsx'] // 
+  },
+
+  entry: ['./src/index'],
+  module : {
+    rules: [{
+      test: /\.jsx?/, // js와 jsx파일에 babel-loader 적용
+      loader: 'babel-loader',
+      options: { // babel 옵션 적용
+        presets: [
+          ['@babel/preset-env', {
+            targets: {
+              browsers: ['> 5% in KR']
+            },
+            debug: true
+          }], '@babel/preset-react']
+      }
+    }]
+  },
+  plugins: [
+    new webpack.LoaderOptionsPlugin({ debug: true }), // loader의 options에 debug: true 모두 설정
+  ],
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'app.js'
+  }
+}
+```
+
+- **targets**
+  - **browsers** : 원하는 브라우저에만 설정 가능 
+    - 모두 설정을 하면 babel 작업량이 증가해 속도 저하
+    - 옵션 값은 [여기](https://github.com/browserslist/browserslist)에서 확인 가능
+- **debug** : 개발용에서 디버그 설정
+- **plugins** : 확장 프로그램 설정
