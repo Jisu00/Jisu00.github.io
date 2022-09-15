@@ -5,51 +5,65 @@
   <label for="ac-toc">Categories</label>
   <ul class="nav__items" id="category_tag_menu">
     <li>
-      <span class="nav__sub-title first">Web</span>
+      <span class="nav__sub-title first">Language</span>
       <ul>
-        {% for category in site.categories %}
-          {% if category[0] == "HTML & CSS" %}
-            <li><a href="/categories/html_css" class="">HTML & CSS ({{category[1].size}})</a></li>
-          {% endif %}
-        {% endfor %}
+        {% for category in site.categories %} {% if category[0] == "HTML & CSS"
+        %}
+        <li>
+          <a href="/categories/html_css" class=""
+            >HTML & CSS ({{category[1].size}})</a
+          >
+        </li>
+        {% endif %} {% endfor %}
       </ul>
       <ul>
-        {% for category in site.categories %}
-          {% if category[0] == "JavaScript" %}
-            <li><a href="/categories/javascript" class="">JavaScript ({{category[1].size}})</a></li>
-          {% endif %}
-        {% endfor %}
+        {% for category in site.categories %} {% if category[0] == "JavaScript"
+        %}
+        <li>
+          <a href="/categories/javascript" class=""
+            >JavaScript ({{category[1].size}})</a
+          >
+        </li>
+        {% endif %} {% endfor %}
       </ul>
       <ul>
-        {% for category in site.categories %}
-          {% if category[0] == "React" %}
-            <li><a href="/categories/react" class="">React ({{category[1].size}})</a></li>
-          {% endif %}
-        {% endfor %}
+        {% for category in site.categories %} {% if category[0] == "Error" %}
+        <li>
+          <a href="/categories/error" class="">Error ({{category[1].size}})</a>
+        </li>
+        {% endif %} {% endfor %}
       </ul>
+    </li>
+    <li>
+      <span class="nav__sub-title">Library & Framework</span>
       <ul>
-        {% for category in site.categories %}
-          {% if category[0] == "Express" %}
-            <li><a href="/categories/express" class="">Express ({{category[1].size}})</a></li>
-          {% endif %}
-        {% endfor %}
+        {% for category in site.categories %} {% if category[0] == "React" %}
+        <li>
+          <a href="/categories/react" class="">React ({{category[1].size}})</a>
+        </li>
+        {% endif %} {% endfor %}
       </ul>
+    </li>
+    <li>
+      <span class="nav__sub-title">Back-end</span>
       <ul>
-        {% for category in site.categories %}
-          {% if category[0] == "Error" %}
-            <li><a href="/categories/error" class="">Error ({{category[1].size}})</a></li>
-          {% endif %}
-        {% endfor %}
+        {% for category in site.categories %} {% if category[0] == "Express" %}
+        <li>
+          <a href="/categories/express" class=""
+            >Express ({{category[1].size}})</a
+          >
+        </li>
+        {% endif %} {% endfor %}
       </ul>
     </li>
     <li>
       <span class="nav__sub-title">ETC</span>
       <ul>
-        {% for category in site.categories %}
-          {% if category[0] == "Git" %}
-            <li><a href="/categories/git" class="">Git ({{category[1].size}})</a></li>
-          {% endif %}
-        {% endfor %}
+        {% for category in site.categories %} {% if category[0] == "Git" %}
+        <li>
+          <a href="/categories/git" class="">Git ({{category[1].size}})</a>
+        </li>
+        {% endif %} {% endfor %}
       </ul>
     </li>
   </ul>
