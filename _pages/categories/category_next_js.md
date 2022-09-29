@@ -1,15 +1,15 @@
 ---
-title: "Axios"
+title: "Next.js"
 layout: archive
-permalink: /categories/axios
+permalink: /categories/next_js
 author_profile: true
 sidebar:
   nav: "sidebar"
 ---
 
-<h2> {{ site.categories["Axios"] | size }} 개의 포스트 </h2>
+<h2> {{ site.categories["Next.js"] | size }} 개의 포스트 </h2>
 
-{% assign posts = site.categories["Axios"] %}
+{% assign posts = site.categories["Next.js"] %}
 
 {% for post in posts %}
 {% include archive-single.html type=page.entries_layout %}
