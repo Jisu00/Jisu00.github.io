@@ -51,6 +51,16 @@
         {% endif %} {% endfor %}
       </ul>
       <ul>
+        {% for category in site.categories %} {% if category[0] ==
+        "Styled-Components" %}
+        <li>
+          <a href="/categories/styled_components" class=""
+            >Styled-Components ({{category[1].size}})</a
+          >
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+      <ul>
         {% for category in site.categories %} {% if category[0] == "Next.js" %}
         <li>
           <a href="/categories/next_js" class=""
