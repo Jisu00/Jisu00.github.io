@@ -47,9 +47,28 @@
         {% endif %} {% endfor %}
       </ul>
       <ul>
+        {% for category in site.categories %} {% if category[0] == "Recoil" %}
+        <li>
+          <a href="/categories/recoil" class=""
+            >Recoil ({{category[1].size}})</a
+          >
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+      <ul>
         {% for category in site.categories %} {% if category[0] == "Axios" %}
         <li>
           <a href="/categories/axios" class="">Axios ({{category[1].size}})</a>
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+      <ul>
+        {% for category in site.categories %} {% if category[0] ==
+        "Styled-Components" %}
+        <li>
+          <a href="/categories/styled_components" class=""
+            >Styled-Components ({{category[1].size}})</a
+          >
         </li>
         {% endif %} {% endfor %}
       </ul>
