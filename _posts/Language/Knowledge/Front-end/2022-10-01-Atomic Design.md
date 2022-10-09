@@ -1,10 +1,10 @@
 ---
-title: "[React] Atomic Design (아토믹 디자인)"
+title: "[FE] Atomic Design (아토믹 디자인)"
 categories:
-  - React
+  - Front-end
 tags:
   - Web
-  - React
+  - FE Knowledge
   - Design
 date: 2022-10-01
 last_modified_at: 2022-10-01

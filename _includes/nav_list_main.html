@@ -95,6 +95,18 @@
       </ul>
     </li>
     <li>
+      <span class="nav__sub-title">Knowledge</span>
+      <ul>
+        {% for category in site.categories %} {% if category[0] == "Git" %}
+        <li>
+          <a href="/categories/front-end" class=""
+            >Front-end ({{category[1].size}})</a
+          >
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+    </li>
+    <li>
       <span class="nav__sub-title">ETC</span>
       <ul>
         {% for category in site.categories %} {% if category[0] == "Git" %}
